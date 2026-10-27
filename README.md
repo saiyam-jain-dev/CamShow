@@ -52,3 +52,8 @@ python build_exe.py
 ```
 
 The compiled binary will be generated in `dist/CamShow.exe`.
+---
+
+## ?? License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
