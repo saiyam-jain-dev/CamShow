@@ -18,7 +18,7 @@
 
 1. Clone or download this repository:
    ```bash
-   git clone <REPO_URL>
+   git clone https://github.com/saiyam-jain-dev/CamShow.git
    cd CamShow
    ```
 
@@ -42,6 +42,17 @@
 
 ---
 
+## 🔧 Troubleshooting & Tips
+
+- **Virtual Camera Not Detected**:
+  Ensure OBS Studio has been launched at least once and "Start Virtual Camera" was toggled on to register the DirectShow device filter in Windows.
+- **Audio Sync**:
+  CamShow streams video frames to the DirectShow virtual camera device. For accompanying virtual microphone streaming, use an audio routing tool like VB-Audio Virtual Cable.
+- **Supported Video Formats**:
+  H.264 / MP4, AVI, MKV, MOV, and WebM containers via OpenCV's underlying FFmpeg video capture decoder.
+
+---
+
 ## 🛠 Manual Build Instructions
 
 If you want to build `CamShow.exe` manually:
@@ -52,8 +63,9 @@ python build_exe.py
 ```
 
 The compiled binary will be generated in `dist/CamShow.exe`.
+
 ---
 
-## ?? License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
